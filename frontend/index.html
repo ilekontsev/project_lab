@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project_lab</title>
+  </head>
+  <body>
+
+    <div style="margin: 20px">
+      <form class='form' style='display: flex; flex-direction: column; width: 400px; border: 1px solid'>
+        <input style="margin: 5px" type="text" name='name' placeholder='ФИО'>
+        <input style="margin: 5px" type="number" name='serial' placeholder="серия паспорта">
+        <input style="margin: 5px" type="date" name='age' placeholder="дата рождения">
+        <input style="margin: 5px; width: 100px; align-self: center;" type="submit" value="Создать">
+        </form>
+    </div>
+
+    <div style="width: 100%" class="modal"></div>
+    <div style="margin: 20px">
+      <input type="text" placeholder="Найти паспортные данные" class="input" />
+      <button onclick="findPassport()">Найти</button>
+    </div>
+
+    <table border="1px" style="margin: 20px; display: none;" class="tbody">
+      <tr>
+        <th style="padding: 20px;">Фамилия Имя Отчество</th>
+        <th style="padding: 20px;">дата рождения</th>
+        <th style="padding: 20px;">серия паспорта</th>
+        <th style="padding: 20px;">hash</th>
+      </tr> 
+    </table>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
